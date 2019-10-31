@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>HTML wireframe</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
-  </head>
+
+<head>
+  <title>HTML wireframe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+</head>
 ​
-  <body>
-    <div class="container">
-      <nav role="navigation">
-        <ul>
-          <li class="name"><a href="#"><span class="bold">Nick Williams</span></a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-      
-      <main>
-        <section class="bio border">
-          <p>
-            I am a <span class="bold">host</span> at heart. It has always been my goal to make anyone
-            around me as comfortable as possible and feel like we are old
-            friends regardless of how long I've known them. <span class="bold">Technology</span> has
-            always been a passion of mine from a young age. The wonderment of
-            how the devices we use can do so much in a so seemingly simple
-            fashion is remarkable. As a <span class="bold">Web Developer</span>, I get to marry these two
-            <span class="bold">passions</span> by creating inviting, easy-to-use applications that put the
-            user at ease with their intuitiveness.
-          </p>
-          <button type="button" class="buttons dark-button">Projects</button>
-          <button type="button" class="buttons light-button">Email</button>
-        </section>
-      </main>
-    </div>
-    <footer role="content-info">Nick Williams 2019</footer>
-  </body>
+
+<body>
+  <div class="container">
+    <nav role="navigation">
+      <ul>
+        <button><li class="name"><a href="#"><span class="bold">NickWilliams</span></a></li></button>
+        <button><li class="projectsLink">Projects</li></button>
+        <button><li class="aboutMe">About</li></button>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="bio border">
+        <p>
+          I am a <span class="bold">host</span> at heart. It has always been my goal to make anyone
+          around me as comfortable as possible and feel like we are old
+          friends regardless of how long I've known them. <span class="bold">Technology</span> has
+          always been a passion of mine from a young age. The wonderment of
+          how the devices we use can do so much in a so seemingly simple
+          fashion is remarkable. As a <span class="bold">Web Developer</span>, I get to marry these two
+          <span class="bold">passions</span> by creating inviting, easy-to-use applications that put the
+          user at ease with their intuitiveness.
+        </p>
+        <button type="button" class="buttons dark-button">Projects</button>
+        <button type="button" class="buttons light-button"><a href="mailto:nickwilliams4@gmail.com">Email</a></button>
+      </section>
+      <section class="about border"style="display: none;">
+        <p>When I am not behind a computer, you can find me on a hike with my two dogs, on the golf course, or enjoying
+          dinner and a movie with my girlfriend. My competitive nature keeps me ready for a challenge of any kind at any
+          time or place, and it fuels me in my pursuit of bettering myself by not taking any easy paths.
+        </p>
+        <p>You may reach me at the following links:</p>
+        <div class="links">
+          <a href="https://github.com/nickwilliams4" target="blank"> <img src="GitHubLogo.png" class="contactLogos"></a>
+          <a href="https://www.linkedin.com/in/nickswilliams/" target="blank"> <img src="LinkedInLogo.png" class="contactLogos"></a>
+          <a href="mailto:nickwilliams4@gmail.com"> <img src="emailLogo.jpeg" class="contactLogos"></a>
+        </div>
+      </section>
+      <section class="projects border" style="display: none;">
+          <a href="https://nickwilliams4.github.io/QuizApp/" target="blank"><img src="QuizAppScreenshot1.png" class="projectImages" alt="Screenshot of Quiz App"></a>
+          <p>Quiz App: A 10 Question General Knowledge Quiz</p>
+      </section>
+    </main>
+  </div>
+  <footer role="content-info">Nick Williams 2019</footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
