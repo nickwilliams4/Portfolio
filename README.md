@@ -1,1 +1,1 @@
-# PortfolioMainWireframe
+This is my portfolio website.  It lets people know about how technology is a passion of mine and how I get to use my natural instincts to be a web developer.  It also has a project (soon to be projects) of mine including links to see the code and to play the app itself.  Finally, there is an "about me" section that lets the user get to know me a little bit outside of programming.
