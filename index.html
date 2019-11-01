@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>HTML wireframe</title>
+  <title>Portfolio for Nick Williams</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="main.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -14,13 +14,12 @@
   <div class="container">
     <nav role="navigation">
       <ul>
-        <button><li class="name"><a href="#"><span class="bold">NickWilliams</span></a></li></button>
-        <button><li class="projectsLink">Projects</li></button>
-        <button><li class="aboutMe">About</li></button>
+        <li class="name"><button class="navHover" tabindex="0"><span class="bold" style="font-family: 'Quattrocento', serif;">NickWilliams</span></button></li>
+        <li class="projectsLink"><button tabindex="0" class="navHover" style="font-family: 'Quattrocento', serif;">Projects</button></li>
+        <li class="aboutMe"><button tabindex="0" class="navHover" style="font-family: 'Quattrocento', serif;">About</button></li>
       </ul>
     </nav>
-
-    <main>
+   <main>
       <section class="bio border">
         <p>
           I am a <span class="bold">host</span> at heart. It has always been my goal to make anyone
@@ -32,33 +31,43 @@
           <span class="bold">passions</span> by creating inviting, easy-to-use applications that put the
           user at ease with their intuitiveness.
         </p>
-        <button type="button" class="buttons dark-button">Projects</button>
-        <button type="button" class="buttons light-button"><a href="mailto:nickwilliams4@gmail.com">Email</a></button>
+        <button type="button" class="buttons dark-button" tabindex="0">Projects</button>
+        <button type="button" class="buttons light-button" tabindex="0"><a href="mailto:nickwilliams4@gmail.com">Email</a></button>
       </section>
-      <section class="about border"style="display: none;">
+      <section class="about border" style="display: none;">
         <p>When I am not behind a computer, you can find me on a hike with my two dogs, on the golf course, or enjoying
           dinner and a movie with my girlfriend. My competitive nature keeps me ready for a challenge of any kind at any
           time or place, and it fuels me in my pursuit of bettering myself by not taking any easy paths.
         </p>
         <p>You may reach me at the following links:</p>
         <div class="links">
-          <a href="https://github.com/nickwilliams4" target="blank"> <img src="GitHubLogo.png" class="contactLogos" alt="GitHub Logo"></a>
-          <a href="https://www.linkedin.com/in/nickswilliams/" target="blank"> <img src="LinkedInLogo.png" class="contactLogos" alt="LinkedIn Logo"></a>
-          <a href="mailto:nickwilliams4@gmail.com"> <img src="emailLogo.jpeg" class="contactLogos" alt="classic email icon"></a>
+          <a href="https://github.com/nickwilliams4" target="blank"> <img src="GitHubLogo.png" class="contactLogos"
+              alt="GitHub Logo"></a>
+          <a href="https://www.linkedin.com/in/nickswilliams/" target="blank"> <img src="LinkedInLogo.png"
+              class="contactLogos" alt="LinkedIn Logo"></a>
+          <a href="mailto:nickwilliams4@gmail.com"> <img src="emailLogo.jpeg" class="contactLogos"
+              alt="classic email icon"></a>
         </div>
       </section>
       <section class="projects border" style="display: none;">
-          <a href="https://nickwilliams4.github.io/QuizApp/" target="blank"><img src="QuizAppScreenshot1.png" class="projectImages" alt="Screenshot of Quiz App"></a>
+        <div class="imgOverlay">
+          <a href="https://nickwilliams4.github.io/QuizApp/" target="blank"><img src="QuizAppScreenshot1.png"
+              class="projectImages" alt="Screenshot of Quiz App"></a>
           <div class="overlay">
-              <div class="text">Play it!</div>
-            </div>
-          <p class="projectDescription">This is a 10 question quiz from random subjects spanning all walks of life. The randomness will make the user think and keep them on their toes. It uses HTML, CSS, JavaScript, jQuery, and is a11y accessible.</p>
-          <button class="projectButton buttons light-button"><a href="https://github.com/nickwilliams4/QuizApp" target="blank">View Code</a></button>
-          <button class="projectButton buttons light-button"><a href="https://nickwilliams4.github.io/QuizApp/" target="blank">View Project</a></button>
-        </section>
+            <div class="text">Play it!</div>
+          </div>
+        </div>
+        <p class="projectDescription">This is a 10 question quiz from random subjects spanning all walks of life. The
+          randomness will make the user think and keep them on their toes. It uses HTML, CSS, JavaScript, jQuery, and is
+          a11y accessible.</p>
+        <button class="projectButton buttons light-button" tabindex="0"><a href="https://github.com/nickwilliams4/QuizApp"
+            target="blank">View Code</a></button>
+        <button class="projectButton buttons light-button" tabindex="0"><a href="https://nickwilliams4.github.io/QuizApp/"
+            target="blank">View Project</a></button>
+      </section>
     </main>
   </div>
-  <footer role="content-info">Nick Williams 2019</footer>
+  <footer> Nick Williams 2019</footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="app.js"></script>
 </body>
