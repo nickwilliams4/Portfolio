@@ -10,6 +10,7 @@ a:hover {
 button:hover {
   cursor: pointer;
 }
+
 li:hover {
   text-decoration: underline;
   -webkit-transform: scale(1.3);
@@ -41,6 +42,7 @@ body {
   flex-direction: column;
   height: 100%;
 }
+@media screen and (min-width: 0px) {
 .container {
   flex: 1;
   display: flex;
@@ -92,13 +94,13 @@ button {
 }
 .imgOverlay {
   position: relative;
-  max-width: 57%;
-  min-width: 500px;
+  max-width: 100%;
+  margin: 0 auto;
 } 
 .projectImages {
   margin: 7px;
   margin-bottom: 0;
-  min-width: 300px;
+  min-width: 100px;
   max-width: 100%;
 }
 .text {
@@ -135,6 +137,7 @@ footer {
   flex: 0;
   padding: 10px;
 }
+}
 @media screen and (min-width: 800px) {
   .container {
     flex-direction: row;
@@ -160,7 +163,7 @@ footer {
 .projectImages {
   margin: 0px;
   margin-bottom: 0;
-  max-width: 100%;
+  max-width: 57%;
   min-width: 500px;
 }
 .projectDescription {
