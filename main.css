@@ -170,4 +170,7 @@ footer {
   max-width: 57%;
   min-width: 500px;
 }
+.overlay {
+  max-width: 57%;
+}
 }
